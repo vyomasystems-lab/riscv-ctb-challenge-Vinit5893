@@ -1,5 +1,5 @@
 # riscv_ctb_challenges
-To see Challenge Solution Readme.
+To see Challenge Solution Readme click on the below links.
 ## Challenge_level1
 - [Challenge1_logical](challenge_level1/challenge1_logical/Readme.md)
 - [Challenge2_loop](challenge_level1/challenge2_loop/Readme,md) 
