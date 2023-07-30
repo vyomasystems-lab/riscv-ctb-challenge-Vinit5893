@@ -19,9 +19,11 @@ loop:
   lw t3, 8(t0)
   add t4, t1, t2
   addi t0, t0, 12
-  beq t3, t4, loop        # check if sum is correct
-  j fail
-
+  bne t3, t4, fail        # check if sum is correct -- Jump to the "fail" label if t3 is not equal to t4
+  addi t5, t5, -1         # Decrement the loop control variable t5
+  beqz t5, pass           # Jump to the "pass" label if t5 is zero
+  j loop                  # Else go to the loop again.
+  
 test_end:
 
 TEST_PASSFAIL
