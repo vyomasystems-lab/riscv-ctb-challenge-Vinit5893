@@ -34,7 +34,7 @@ RVTEST_CODE_END
 RVTEST_DATA_BEGIN
 
 test_cases:
-  .word 0x20               # input 1
+  .word 0x10               # input 1
   .word 0x20               # input 2
   .word 0x40               # sum
   .word 0x03034078
