@@ -1,4 +1,4 @@
-# challenge_level1/challenge2_lop
+# challenge_level1/challenge2_loop
 
 Rectification of the test.S file to successfully perform the spike test simulation.
 
