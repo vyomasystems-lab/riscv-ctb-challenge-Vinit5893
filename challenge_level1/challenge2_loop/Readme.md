@@ -27,7 +27,7 @@ Rectification of the test.S file.
   li t5, 3
 
 loop:
-	lw t1, (t0)
+  lw t1, (t0)
   lw t2, 4(t0)
   lw t3, 8(t0)
   add t4, t1, t2
@@ -45,7 +45,7 @@ In this code the loop control variable is present but it is not utilized in the 
   li t5, 3
 
 loop:
-	lw t1, (t0)
+  lw t1, (t0)
   lw t2, 4(t0)
   lw t3, 8(t0)
   add t4, t1, t2
