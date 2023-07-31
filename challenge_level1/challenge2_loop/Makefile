@@ -9,7 +9,7 @@ disass: compile
 
 spike: compile
 	spike --isa=rv32i test.elf 
-	spike --log-commits --log  test_spike.dump --isa=rv32i +signature=test_spike_signature.log test.elf
+	spike -l --log-commits --log  test_spike.dump --isa=rv32i +signature=test_spike_signature.log test.elf
 
 clean:
 	rm -rf *.elf *.disass *.log *.dump
