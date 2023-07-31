@@ -23,9 +23,9 @@ priv-mode:
 #                           
 # ---------------------------------------------------------------------------------
 general:
-  total_instructions: 10
+  total_instructions: 9
   regs_not_use: x1,x2
-  custom_trap_handler: True
+  custom_trap_handler: false
   code_start_address: 0x80000000
   default_program_exit: true
   delegation: 0x0
@@ -37,54 +37,8 @@ general:
 # generated equal number of times in the total instructions. Specify 0 to disable.
 # ---------------------------------------------------------------------------------
 isa-instruction-distribution:
-  rel_sys: 0
-  rel_sys.csr: 0
-  rel_rv32i.ctrl: 0
-  rel_rv32i.compute: 10
-  rel_rv32i.data: 0
-  rel_rv32i.fence: 0
-  rel_rv64i.compute: 0
-  rel_rv64i.data: 0
-  rel_rv32i.zba: 0
-  rel_rv64i.zba: 0
-  rel_rv32i.zbb: 0
-  rel_rv64i.zbb: 0
-  rel_rv32i.zbc: 0
-  rel_rv32i.zbs: 0
-  rel_rv32i.zbe: 0
-  rel_rv64i.zbe: 0
-  rel_rv32i.zbf: 0
-  rel_rv64i.zbf: 0
-  rel_rv64i.zbm: 0
-  rel_rv32i.zbp: 0
-  rel_rv64i.zbp: 0
-  rel_rv32i.zbr: 0
-  rel_rv64i.zbr: 0
-  rel_rv32i.zbt: 0
-  rel_rv64i.zbt: 0
-  rel_rv32m: 0
-  rel_rv64m: 0
-  rel_rv32a: 0
-  rel_rv64a: 0
-  rel_rv32f: 0
-  rel_rv64f: 0
-  rel_rv32d: 0
-  rel_rv64d: 0
 
-# Compressed instructions
-
-  rel_rvc.ctrl: 0
-  rel_rvc.compute: 0
-  rel_rvc.sp: 0
-  rel_rvc.data: 0
-  rel_rvc.fdata: 0
-
-  rel_rv32c.compute: 0
-  rel_rv32c.ctrl: 0
-  rel_rv32c.fdata: 0
-
-  rel_rv64c.compute: 0
-  rel_rv64c.data: 0
+  rel_sys.csr: 1
 
 float-rounding:
   rne: 0
@@ -105,8 +59,8 @@ branch-control:
 # ---------------------------------------------------------------------------------
 recursion-options:
   recursion-enable: false
-  recursion-depth: 0
-  recursion-calls: 0
+  recursion-depth: 10
+  recursion-calls: 5
 
 # ---------------------------------------------------------------------------------
 # Data access sections

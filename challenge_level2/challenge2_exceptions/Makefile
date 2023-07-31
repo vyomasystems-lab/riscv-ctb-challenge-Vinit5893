@@ -17,7 +17,7 @@ disass: compile
 spike: compile
 	@echo '[UpTickPro] Spike Run ------'
 	spike --isa=rv32i test.elf 
-	spike --log-commits --log  test_spike.dump --isa=rv32i +signature=test_spike_signature.log test.elf
+	spike -l --log-commits --log  test_spike.dump --isa=rv32i +signature=test_spike_signature.log test.elf
 
 check: test_spike.dump
 	@echo '[UpTickPro] Number of Exceptions'
