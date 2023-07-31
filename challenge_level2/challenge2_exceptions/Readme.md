@@ -36,7 +36,7 @@ This is the simulation output
 ![bash make.png](<bash make success.png>)
 
 10 illegal exceptions are successfully generated using aapg test generation.
-
+## rv32i.yaml File
 ```yaml
 # Sample config.yaml file to generate a random program
 # using aapg (Automated Assembly Program Generator)
